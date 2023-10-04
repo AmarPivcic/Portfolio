@@ -1,0 +1,525 @@
+*{
+  font-family: 'Gabarito', cursive;
+}
+
+a{
+  text-decoration: none;
+}
+
+.hero{
+  position: relative;
+    height: 100vh;
+    background: linear-gradient(300deg, #F6C90E, rgb(45,45,45), rgb(25,25,25));
+    background-size: 200% 200%;
+    animation: gradient-animation 60s ease infinite;
+}
+
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.image{
+    height: 450px;
+    position: absolute;
+    left: 100px;
+    top: 250px;
+    border-radius: 5%;
+    z-index: 1;
+}
+.yellowbox{
+  background-color: #F6C90E;
+  height: 450px;
+  width: 380px;
+  border-radius: 5%;
+  position: absolute;
+  left: -150px;
+  top: 200px;
+}
+
+.hero-secondary{
+    position: absolute;
+    left: 550px;
+    right: 350px;
+    top: 475px;
+    text-align: center;
+}
+
+.yellow{
+    color: #F6C90E;
+}
+
+.white{
+    color: white;
+}
+
+.nav{
+  position: fixed;
+  right: 20px;
+  top: 200px;
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+}
+
+.svgicon{
+    height: 70px;
+    width: 70px;
+    border-radius: 25%;
+    color: white;
+    background-color: rgb(45,45,45);
+    margin-bottom: 15px;
+    rotate: 0deg;
+    transition: rotate 2s, border-radius  0.5s;
+}
+
+.svgicon:hover{
+    background-color: #F6C90E;
+    color: rgb(25,25,25);
+    rotate: 360deg;
+    border-radius: 50%;
+}
+
+.svgicon2{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    color: white;
+    background-color: rgb(45,45,45);
+    margin-bottom: 15px;
+    rotate: 0deg;
+    transition: rotate 2s, border-radius 0.5s;
+}
+
+.svgicon2:hover{
+    background-color: rgb(25,25,25);
+    color: #F6C90E;
+    rotate: 360deg;
+}
+
+.contacticon{
+  border-radius: 50%;
+}
+.education{
+    background-color: rgb(25,25,25);
+    text-align: center;
+    height: 600px;
+    padding-top: 50px;
+}
+
+.education-container{
+    display: flex;
+    height: 200px;
+    width: 100;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+
+.education-card{
+    height: 330px;
+    width: 400px;
+    background-color: rgb(45,45,45);
+    border-radius: 10%;
+}
+
+#hs{
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#cg{
+    color: #F6C90E;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+li{
+    list-style: none;
+    text-align: left;
+    padding: 5px;
+}
+
+#hsmain li{
+    color: #F6C90E;
+}
+
+#cgmain li{
+    color: white;
+}
+
+.skills{
+    background-color: rgb(25,25,25);
+    height: 950px;
+    text-align: center;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+  .skills-container1{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 100px;
+  }
+
+.skills-secondary{
+  background-color: rgb(45,45,45);
+  padding-top: 75px;
+  border-radius: 5%;
+  width: 800px;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  }
+
+  .otherSkills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-flex{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .progress-barCSS {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background:
+      radial-gradient(closest-side, rgb(25,25,25) 79%, transparent 80% 100%),
+      conic-gradient(#F6C90E 95%, white 0);
+    background-color: rgb(25,25,25);
+    transition-duration: 0.5s;
+  }
+
+  .progress-barCSS:hover{
+    height: 140px;
+    width: 140px;
+  }
+
+  .progress-barCSS::before {
+    content: "CSS 95%";
+    color: white;
+  }
+
+  .progress-barHTML {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background:
+      radial-gradient(closest-side, rgb(25,25,25) 79%, transparent 80% 100%),
+      conic-gradient(#F6C90E 95%, white 0);
+    background-color: rgb(25,25,25);
+    transition-duration: 0.5s;
+  }
+
+.progress-barHTML:hover{
+  width: 140px;
+  height: 140px;
+}
+
+  .progress-barHTML::before {
+    content: "HTML 95%";
+    color: white;
+  }
+
+  .progress-barJS {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background:
+      radial-gradient(closest-side, rgb(25,25,25) 79%, transparent 80% 100%),
+      conic-gradient(#F6C90E 75%, white 0);
+    background-color: rgb(25,25,25);
+    transition-duration: 0.5s;
+  }
+
+  .progress-barJS:hover{
+    height: 140px;
+    width: 140px;
+  }
+
+  .progress-barJS::before {
+    content: "JS 75%";
+    color: white;
+  }
+
+  .progress-barCPP {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background:
+      radial-gradient(closest-side, rgb(25,25,25) 79%, transparent 80% 100%),
+      conic-gradient(#F6C90E 95%, white 0);
+    background-color: rgb(25,25,25);
+    transition-duration: 0.5s;
+  }
+
+.progress-barCPP:hover{
+  height: 140px;
+  width: 140px;
+}
+
+  .progress-barCPP::before {
+    content: "C++ 95%";
+    color: white;
+  }
+
+  .progress-barCSH {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background:
+      radial-gradient(closest-side, rgb(25,25,25) 79%, transparent 80% 100%),
+      conic-gradient(#F6C90E 90%, white 0);
+    background-color: rgb(25,25,25);
+    transition-duration: 0.5s;
+  }
+
+  .progress-barCSH:hover{
+    width: 140px;
+    height: 140px;
+  }
+
+  .progress-barCSH::before {
+    content: "C# 90%";
+    color: white;
+  }
+
+  .progress-barSQL {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background:
+      radial-gradient(closest-side, rgb(25,25,25) 79%, transparent 80% 100%),
+      conic-gradient(#F6C90E 100%, white 0);
+    background-color: rgb(25,25,25);
+    transition-duration: 0.5s;
+  }
+
+  .progress-barSQL:hover{
+    height: 140px;
+    width: 140px;
+  }
+
+  .progress-barSQL::before {
+    content: "SQL 100%";
+    color: white;
+  }
+
+  .progress-barReact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background:
+      radial-gradient(closest-side, rgb(25,25,25) 79%, transparent 80% 100%),
+      conic-gradient(#F6C90E 40%, white 0);
+    background-color: rgb(25,25,25);
+    transition-duration: 0.5s;
+  }
+
+  .progress-barReact:hover{
+    height: 140px;
+    width: 140px;
+  }
+
+  .progress-barReact::before {
+    content: "React 40%";
+    color: white;
+  }
+
+  .progress-barAngular {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background:
+      radial-gradient(closest-side, rgb(25,25,25) 79%, transparent 80% 100%),
+      conic-gradient(#F6C90E 40%, white 0);
+    background-color: rgb(25,25,25);
+    transition-duration: 0.5s;
+  }
+
+  .progress-barAngular:hover{
+    width: 140px;
+    height: 140px;
+  }
+  .progress-barAngular::before {
+    content: "Angular 40%";
+    color: white;
+  }
+
+
+  .projects{
+    background-color: rgb(25,25,25);
+    height: 600px;
+    text-align: center;
+    padding-top: 70px;
+  }
+
+  .projects img{
+    border-radius:  5%;
+    margin-top: 40px;
+  }
+
+  .projects p{
+    color: white;
+    padding-top: 2px;
+  }
+
+  .contact{
+    background-color: rgb(25,25,25);
+    height: 300px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-content{
+    padding-top: 20px;
+  }
+
+  .contact-content svg{
+    margin: 30px;
+  }
+
+
+  @media (max-width:850px){
+
+  .hero-secondary{
+    left: 100px;
+    top: 750px;
+    right: 100px;
+}
+
+  .nav{
+    position: sticky;
+    right: 170px;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+    height: 0;
+    justify-content: center;
+}
+
+.svgicon{
+  margin: 10px;
+  height: 65px;
+  width: 65px;
+}
+
+.education{
+  height: 800px;
+  padding-top: 50px;
+}
+
+.education-container{
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  padding-top: 350px;
+  align-items: center;
+}
+
+.education-card{
+  margin-bottom: 20px;
+}
+
+.skills{
+  height: 1150px;
+}
+.skills-container1{
+  flex-direction: column;
+  padding-bottom: 0px;
+  height: 700px;
+}
+
+.skills-secondary{
+  display: flex;
+  padding-top: 0px;
+  border-radius: 5%;
+  width: 400px;
+  height: 1000px;
+  justify-content: space-around;
+}
+
+.skills-flex{
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.projects{
+  padding-top: 50px;
+  height: 450px;
+}
+
+.projects img{
+  width: 500px;
+}
+.contact{
+  background-color: rgb(25,25,25);
+  height: 230px;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-content{
+  padding-top: 0px;
+}
+
+.contact-content svg{
+  margin: 10px;
+}
+
+.contacticon{
+  height: 60px;
+  width: 60px;
+}
+
+  }
+
+  @media (max-width:530px){
+    .projects img{
+      width: 390px;
+    }
+  }
