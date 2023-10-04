@@ -73,19 +73,18 @@ a{
 .svgicon{
     height: 70px;
     width: 70px;
-    border-radius: 25%;
+    border-radius: 50%;
     color: white;
     background-color: rgb(45,45,45);
     margin-bottom: 15px;
     rotate: 0deg;
-    transition: rotate 2s, border-radius  0.5s;
+    transition: rotate 2s;
 }
 
 .svgicon:hover{
     background-color: #F6C90E;
     color: rgb(25,25,25);
     rotate: 360deg;
-    border-radius: 50%;
 }
 
 .svgicon2{
@@ -96,7 +95,7 @@ a{
     background-color: rgb(45,45,45);
     margin-bottom: 15px;
     rotate: 0deg;
-    transition: rotate 2s, border-radius 0.5s;
+    transition: rotate 2s;
 }
 
 .svgicon2:hover{
@@ -105,9 +104,6 @@ a{
     rotate: 360deg;
 }
 
-.contacticon{
-  border-radius: 50%;
-}
 .education{
     background-color: rgb(25,25,25);
     text-align: center;
@@ -518,8 +514,48 @@ li{
 
   }
 
-  @media (max-width:530px){
+@media (max-width:576px){
+
+  .svgicon{
+    height: 55px;
+    width: 55px;
+}
+
+.svgicon2{
+    height: 55px;
+    width: 55px;
+}
+
+.image{
+  height: 450px;
+  left: 30px;
+  top: 150px;
+}
+.yellowbox{
+  height: 450px;
+  width: 380px;
+  left: -150px;
+  top: 100px;
+}
+
+.hero-secondary{
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 650px;
+  text-align: center;
+}
+
+.education-card{
+  width: 330px;
+}
+
+.skills-secondary{
+  width: 330px;
+}
     .projects img{
-      width: 390px;
+      width: 330px;
     }
   }
+
+  
