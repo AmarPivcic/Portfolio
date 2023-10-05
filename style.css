@@ -47,7 +47,7 @@ a{
 
 .hero-secondary{
     position: absolute;
-    left: 550px;
+    left: 600px;
     right: 350px;
     top: 475px;
     text-align: center;
@@ -419,21 +419,39 @@ li{
 
   @media (max-width:850px){
 
+.hero{
+  height: 850px;
+}
+
+.image{
+  top: 200px;
+  height: 400px;
+}
+
+.yellowbox{
+  top: 150px;
+  height: 400px;
+}
+
   .hero-secondary{
     left: 100px;
-    top: 750px;
+    top: 700px;
     right: 100px;
 }
 
   .nav{
-    position: sticky;
-    right: 170px;
+    position: fixed;
     top: 0px;
     display: flex;
     flex-direction: row;
     z-index: 2;
-    height: 0;
+    height: 20;
+    background-color: #F6C90E;
     justify-content: center;
+    width: 80%;
+    left: 10%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .svgicon{
@@ -457,6 +475,7 @@ li{
 
 .education-card{
   margin-bottom: 20px;
+  border-radius: 20px;
 }
 
 .skills{
@@ -471,7 +490,7 @@ li{
 .skills-secondary{
   display: flex;
   padding-top: 0px;
-  border-radius: 5%;
+  border-radius: 20px;
   width: 400px;
   height: 1000px;
   justify-content: space-around;
@@ -489,6 +508,7 @@ li{
 
 .projects img{
   width: 500px;
+  border-radius: 20px;
 }
 .contact{
   background-color: rgb(25,25,25);
@@ -516,33 +536,53 @@ li{
 
 @media (max-width:576px){
 
+.hero{
+  height: 800px;
+}
+  .nav{
+    position: fixed;
+    bottom: 0px;
+    top: auto;
+    text-align: center;
+    background-color: #F6C90E;
+    justify-content: space-evenly;
+    width: 90%;
+    left: 5%;
+    height: 80px;
+    align-items: center;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
   .svgicon{
-    height: 55px;
-    width: 55px;
+    height: 40px;
+    width: 40px;
 }
 
 .svgicon2{
-    height: 55px;
-    width: 55px;
+    height: 40px;
+    width: 40px;
 }
 
+
 .image{
-  height: 450px;
-  left: 30px;
-  top: 150px;
+  height: 350px;
+  left: 7%;
+  top: 250px;
 }
 .yellowbox{
-  height: 450px;
+  height: 350px;
   width: 380px;
   left: -150px;
-  top: 100px;
+  top: 200px;
 }
 
 .hero-secondary{
   position: absolute;
   left: 0px;
   right: 0px;
-  top: 650px;
+  top: 50px;
   text-align: center;
 }
 
@@ -552,10 +592,21 @@ li{
 
 .skills-secondary{
   width: 330px;
+  border-radius: 20px;
 }
-    .projects img{
-      width: 330px;
-    }
+
+.projects{
+  height: 350px;
+}
+
+.projects img{
+  width: 330px;
+}
+
+.contact{
+  height: 275px;
+}
+  
   }
 
   
