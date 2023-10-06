@@ -112,13 +112,11 @@ a{
 .education{
     background-color: rgb(25,25,25);
     text-align: center;
-    height: 600px;
     padding-top: 50px;
 }
 
 .education-container{
     display: flex;
-    height: 200px;
     width: 100;
     justify-content: space-around;
     padding-top: 100px;
@@ -158,8 +156,7 @@ li{
 }
 
 .skills{
-    background-color: rgb(25,25,25);
-    height: 950px;
+    background-color: rgb(25,25,25); 
     text-align: center;
     padding-top: 50px;
     display: flex;
@@ -179,7 +176,6 @@ li{
   padding-top: 75px;
   border-radius: 5%;
   width: 800px;
-  height: 900px;
   display: flex;
   flex-direction: column;
   }
@@ -389,24 +385,63 @@ li{
 
   .projects{
     background-color: rgb(25,25,25);
-    height: 600px;
+    height: 850px;
     text-align: center;
     padding-top: 70px;
   }
 
-  .projects img{
+  .projectscontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+  }
+
+  .projectcard{
+    width: 600px;
+    border-radius: 20px;
+    height: 350px;
+    background: black;
+    position: relative;
+  }
+
+  .projectcard p{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 45%;
+    font-size: 20pt;
+  }
+
+  .cardimage{
+    background-image: url("./images/servis.jpg");
+    background-position: 50%;
+    background-size:cover;
+    opacity: 0.5;
+    height: 350px;
+    border-radius: 20px;
+  }
+
+  .projectcard img{
+    width: 600px;
+    border-radius: 20px;
+  }
+
+  .gato{
     border-radius:  5%;
     margin-top: 40px;
+    width: 600px;
   }
 
   .projects p{
     color: white;
-    padding-top: 2px;
+    text-align: center;
   }
 
   .contact{
     background-color: rgb(25,25,25);
-    height: 300px;
     padding-top: 100px;
     display: flex;
     flex-direction: column;
@@ -466,15 +501,13 @@ li{
 }
 
 .education{
-  height: 800px;
   padding-top: 50px;
 }
 
 .education-container{
   display: flex;
   flex-direction: column;
-  height: 200px;
-  padding-top: 350px;
+  padding-top: 50px;
   align-items: center;
 }
 
@@ -483,9 +516,6 @@ li{
   border-radius: 20px;
 }
 
-.skills{
-  height: 1150px;
-}
 .skills-container1{
   flex-direction: column;
   padding-bottom: 0px;
@@ -497,7 +527,6 @@ li{
   padding-top: 0px;
   border-radius: 20px;
   width: 400px;
-  height: 1000px;
   justify-content: space-around;
 }
 
@@ -508,7 +537,10 @@ li{
 
 .projects{
   padding-top: 50px;
-  height: 450px;
+}
+
+.projectcard{
+  width: 500px;
 }
 
 .projects img{
@@ -517,7 +549,7 @@ li{
 }
 .contact{
   background-color: rgb(25,25,25);
-  height: 230px;
+  
   padding-top: 60px;
   display: flex;
   flex-direction: column;
@@ -570,7 +602,6 @@ li{
     width: 40px;
 }
 
-
 .image{
   height: 350px;
   left: 7%;
@@ -601,7 +632,11 @@ li{
 }
 
 .projects{
-  height: 350px;
+  height: auto;
+}
+
+.projectcard{
+  width: 330px;
 }
 
 .projects img{
