@@ -396,6 +396,11 @@ li{
     height: 350px;
     background: black;
     position: relative;
+    transition: 0.2s;
+  }
+
+  .projectcard:hover{
+    scale: 1.1;
   }
 
   .projectcard p{
