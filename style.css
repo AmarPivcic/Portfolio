@@ -7,6 +7,10 @@ html{
   scroll-behavior:smooth;
 }
 
+h2{
+  font-size: xx-large;
+}
+
 a{
   text-decoration: none;
 }
@@ -17,6 +21,7 @@ a{
     background: linear-gradient(300deg, #F6C90E, rgb(45,45,45), rgb(25,25,25));
     background-size: 200% 200%;
     animation: gradient-animation 60s ease infinite;
+    font-size: x-large;
 }
 
 
@@ -644,6 +649,53 @@ li{
   height: 175px;
 }
   
+  }
+
+  @media (max-width:393px)
+  {
+    .image{
+      height: 300px;
+      left: 7%;
+      top: 250px;
+    }
+    .yellowbox{
+      height: 300px;
+      width: 380px;
+      left: -150px;
+      top: 200px;
+    }
+  }
+
+  @media (max-width:340px)
+  {
+    .image{
+      height: 280px;
+      left: 7%;
+      top: 250px;
+    }
+    .yellowbox{
+      height: 280px;
+      width: 380px;
+      left: -150px;
+      top: 200px;
+    }
+
+    .education-card{
+      width: 280px;
+    }
+    
+    .skills-secondary{
+      width: 280px;
+      border-radius: 20px;
+    }
+
+    .projectcard{
+      width: 280px;
+    }
+    
+    .projects img{
+      width: 280px;
+    }
   }
 
   
