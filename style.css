@@ -18,10 +18,14 @@ a{
 .hero{
   position: relative;
     height: 100vh;
-    background: linear-gradient(300deg, #F6C90E, rgb(45,45,45), rgb(25,25,25));
+    /*background: linear-gradient(300deg, #F6C90E, rgb(45,45,45), rgb(25,25,25));
     background-size: 200% 200%;
     animation: gradient-animation 60s ease infinite;
-    font-size: x-large;
+    font-size: x-large; */
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    background-image: url(./images/background.jpg);
 }
 
 
@@ -41,7 +45,7 @@ a{
     height: 450px;
     position: absolute;
     left: 100px;
-    top: 250px;
+    top: 150px;
     border-radius: 5%;
     z-index: 1;
 }
@@ -52,15 +56,20 @@ a{
   border-radius: 5%;
   position: absolute;
   left: -150px;
-  top: 200px;
+  top: 100px;
 }
 
 .hero-secondary{
     position: absolute;
     left: 600px;
     right: 350px;
-    top: 475px;
+    top: 280px;
     text-align: center;
+    font-size: 24pt;
+}
+
+#softwaretext, #firstname{
+  color: white;
 }
 
 .yellow{
@@ -85,15 +94,15 @@ a{
     width: 70px;
     border-radius: 50%;
     color: white;
-    background-color: rgb(45,45,45);
+    background-color: rgb(5,5,5);
     margin-bottom: 15px;
     rotate: 0deg;
-    transition: rotate 2s;
+    transition: rotate 1.5s;
 }
 
 .svgicon:hover{
     background-color: #F6C90E;
-    color: rgb(25,25,25);
+    color: rgb(5,5,5);
     rotate: 360deg;
 }
 
@@ -102,28 +111,28 @@ a{
     width: 70px;
     border-radius: 50%;
     color: white;
-    background-color: rgb(45,45,45);
+    background-color: rgb(5,5,5);
     margin-bottom: 15px;
     rotate: 0deg;
-    transition: rotate 2s;
+    transition: rotate 1.5s;
 }
 
 .svgicon2:hover{
-    background-color: rgb(25,25,25);
+    background-color: rgb(5,5,5);
     color: #F6C90E;
     rotate: 360deg;
 }
 
 .education{
     background-color: rgb(25,25,25);
-    text-align: center;
     padding-top: 50px;
+    text-align: center;
 }
 
 .education-container{
     display: flex;
     width: 100;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding-top: 100px;
 }
 
@@ -132,6 +141,7 @@ a{
     width: 400px;
     background-color: rgb(45,45,45);
     border-radius: 10%;
+    text-align: center;
 }
 
 #hs{
@@ -458,11 +468,23 @@ li{
     margin: 30px;
   }
 
+  @media (max-width:1300px){
 
+    .hero-secondary{
+      left: 600px;
+      right: 350px;
+      top: 200px;
+      font-size: 20pt;
+  }
+
+}
   @media (max-width:850px){
 
 .hero{
   height: 850px;
+  background-repeat: no-repeat;
+  background-position: 49%;
+  background-size: cover;
 }
 
 .image{
@@ -477,8 +499,11 @@ li{
 
   .hero-secondary{
     left: 100px;
-    top: 700px;
+    top: 650px;
     right: 100px;
+    background-color: rgba(25, 25, 25, 0.5);
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
 }
 
   .nav{
@@ -488,12 +513,11 @@ li{
     flex-direction: row;
     z-index: 2;
     height: 20;
-    background-color: #F6C90E;
+    background-color: rgba(25, 25, 25, 0.5);
     justify-content: center;
-    width: 80%;
-    left: 10%;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    width: 100%;
+    backdrop-filter: blur(8px);
+    right: 0;
 }
 
 .svgicon{
@@ -576,23 +600,27 @@ li{
 @media (max-width:576px){
 
 .hero{
-  height: 800px;
+  height: 100vh;
+}
+
+.hero-secondary{
+  top: 200px;
+  font-size: 16pt;
+  width: 80%;
+  margin-left: 10%;
 }
   .nav{
     position: fixed;
     bottom: 0px;
     top: auto;
     text-align: center;
-    background-color: #F6C90E;
+    backdrop-filter: blur(8px);
+    background-color: #F6C90E90;
+    background-color: rgba(25, 25, 25, 0.5);
     justify-content: space-evenly;
-    width: 90%;
-    left: 5%;
+    width: 100%;
     height: 80px;
     align-items: center;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
 }
   .svgicon{
     height: 40px;
@@ -607,10 +635,10 @@ li{
 .image{
   height: 350px;
   left: 7%;
-  top: 250px;
+  top: 280px;
 }
 .yellowbox{
-  height: 350px;
+  height: 380px;
   width: 380px;
   left: -150px;
   top: 200px;
@@ -653,17 +681,22 @@ li{
 
   @media (max-width:393px)
   {
+
+    .hero{
+      height: 700px;
+    }
     .image{
       height: 300px;
       left: 7%;
-      top: 250px;
+      top: 300px;
     }
     .yellowbox{
       height: 300px;
       width: 380px;
       left: -150px;
-      top: 200px;
+      top: 250px;
     }
+    
   }
 
   @media (max-width:340px)
@@ -671,13 +704,11 @@ li{
     .image{
       height: 280px;
       left: 7%;
-      top: 250px;
     }
     .yellowbox{
       height: 280px;
       width: 380px;
       left: -150px;
-      top: 200px;
     }
 
     .education-card{
@@ -696,6 +727,12 @@ li{
     .projects img{
       width: 280px;
     }
+
+    .progress-barHTML:hover, .progress-barCSS:hover, .progress-barJS:hover, .progress-barCPP:hover, .progress-barCSH:hover,
+    .progress-barSQL:hover, .progress-barAngular:hover, .progress-barReact:hover{
+      scale: 1;
+    }
+    
   }
 
   
