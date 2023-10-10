@@ -3,8 +3,28 @@
   margin: 0;
 }
 
-html{
-  scroll-behavior:smooth;
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: rgb(5, 5, 5);
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #F6C90E;
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #dbb100;
 }
 
 h2{
@@ -18,10 +38,6 @@ a{
 .hero{
   position: relative;
     height: 100vh;
-    /*background: linear-gradient(300deg, #F6C90E, rgb(45,45,45), rgb(25,25,25));
-    background-size: 200% 200%;
-    animation: gradient-animation 60s ease infinite;
-    font-size: x-large; */
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: cover;
@@ -522,8 +538,8 @@ li{
 
 .svgicon{
   margin: 10px;
-  height: 65px;
-  width: 65px;
+  height: 70px;
+  width: 70px;
 }
 
 .education{
@@ -623,13 +639,13 @@ li{
     align-items: center;
 }
   .svgicon{
-    height: 40px;
-    width: 40px;
+    height: 45px;
+    width: 45px;
 }
 
 .svgicon2{
-    height: 40px;
-    width: 40px;
+    height: 45px;
+    width: 45px;
 }
 
 .image{
