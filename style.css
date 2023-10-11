@@ -144,12 +144,14 @@ a{
     background-color: rgb(25,25,25);
     padding-top: 50px;
     text-align: center;
+    padding-top: 50px;
 }
 
 .education-container{
     display: flex;
     width: 100;
     justify-content: space-evenly;
+    padding-top: 50px;
 }
 
 .education-card{
@@ -249,10 +251,6 @@ li{
     transition-duration: 0.5s;
   }
 
-  .progress-barCSS:hover{
-    scale: 1.2;
-  }
-
   .progress-barCSS::before {
     content: "CSS 95%";
     color: white;
@@ -272,10 +270,6 @@ li{
     transition-duration: 0.5s;
   }
 
-.progress-barHTML:hover{
-  scale: 1.2;
-}
-
   .progress-barHTML::before {
     content: "HTML 95%";
     color: white;
@@ -293,10 +287,6 @@ li{
       conic-gradient(#F6C90E 75%, white 0);
     background-color: rgb(25,25,25);
     transition-duration: 0.5s;
-  }
-
-  .progress-barJS:hover{
-    scale: 1.2;
   }
 
   .progress-barJS::before {
@@ -318,10 +308,6 @@ li{
     transition-duration: 0.5s;
   }
 
-.progress-barCPP:hover{
-  scale: 1.2;
-}
-
   .progress-barCPP::before {
     content: "C++ 95%";
     color: white;
@@ -339,10 +325,6 @@ li{
       conic-gradient(#F6C90E 90%, white 0);
     background-color: rgb(25,25,25);
     transition-duration: 0.5s;
-  }
-
-  .progress-barCSH:hover{
-    scale: 1.2;
   }
 
   .progress-barCSH::before {
@@ -364,10 +346,6 @@ li{
     transition-duration: 0.5s;
   }
 
-  .progress-barSQL:hover{
-    scale: 1.2;
-  }
-
   .progress-barSQL::before {
     content: "SQL 100%";
     color: white;
@@ -385,10 +363,6 @@ li{
       conic-gradient(#F6C90E 40%, white 0);
     background-color: rgb(25,25,25);
     transition-duration: 0.5s;
-  }
-
-  .progress-barReact:hover{
-    scale: 1.2;
   }
 
   .progress-barReact::before {
@@ -410,20 +384,21 @@ li{
     transition-duration: 0.5s;
   }
 
-  .progress-barAngular:hover{
-    scale: 1.2;
-  }
   .progress-barAngular::before {
     content: "Angular 40%";
     color: white;
   }
 
+  .progress-barHTML:hover, .progress-barCSS:hover, .progress-barJS:hover, .progress-barCPP:hover, .progress-barCSH:hover,
+    .progress-barSQL:hover, .progress-barAngular:hover, .progress-barReact:hover{
+      scale: 1.2;
+    }
 
   .projects{
     background-color: rgb(25,25,25);
     height: 850px;
     text-align: center;
-    padding-top: 70px;
+    padding-top: 50px;
   }
 
   .projectscontainer{
@@ -483,7 +458,7 @@ li{
 
   .contact{
     background-color: rgb(25,25,25);
-    padding-top: 100px;
+    padding-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -570,14 +545,10 @@ li{
   width: 70px;
 }
 
-.education{
-  padding-top: 50px;
-}
-
 .education-container{
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
+
   align-items: center;
 }
 
