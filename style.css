@@ -1,6 +1,7 @@
 *{
   font-family: 'Gabarito', cursive;
   margin: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html {
@@ -37,7 +38,7 @@ a{
 
 .hero{
   position: relative;
-    height: 100vh;
+    height: 800px;
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: cover;
@@ -149,27 +150,39 @@ a{
     display: flex;
     width: 100;
     justify-content: space-evenly;
-    padding-top: 100px;
 }
 
 .education-card{
     height: 330px;
     width: 400px;
     background-color: rgb(45,45,45);
-    border-radius: 10%;
+    border-radius: 20px;
     text-align: center;
+}
+
+#infotext{
+  text-align: left;
+  color: white;
+  width: 80%;
+  padding-left: 10%;
+}
+
+#in{
+  color: #F6C90E;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 #hs{
     color: white;
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 #cg{
     color: #F6C90E;
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 li{
@@ -199,7 +212,7 @@ li{
   .skills-container1{
     display: flex;
     justify-content: space-evenly;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
   }
 
 .skills-secondary{
@@ -493,7 +506,22 @@ li{
       font-size: 20pt;
   }
 
+  .education-card
+  {
+    width: 300px;
+    height: 450px;
+  }
+
 }
+
+@media (max-width:920px)
+{
+  .education-card
+  {
+    width: 280px;
+  }
+}
+
   @media (max-width:850px){
 
 .hero{
@@ -556,6 +584,12 @@ li{
 .education-card{
   margin-bottom: 20px;
   border-radius: 20px;
+  width: 330px;
+  height: 330px;
+}
+
+.info-card{
+  height: 350px;
 }
 
 .skills-container1{
@@ -615,9 +649,9 @@ li{
 
 @media (max-width:576px){
 
-.hero{
-  height: 100vh;
-}
+  .hero{
+    height: 700px;
+  }
 
 .hero-secondary{
   top: 200px;
@@ -672,6 +706,10 @@ li{
   width: 330px;
 }
 
+.info-card{
+  height: 350px;
+}
+
 .skills-secondary{
   width: 330px;
   border-radius: 20px;
@@ -698,9 +736,6 @@ li{
   @media (max-width:393px)
   {
 
-    .hero{
-      height: 700px;
-    }
     .image{
       height: 300px;
       left: 7%;
@@ -729,6 +764,10 @@ li{
 
     .education-card{
       width: 280px;
+    }
+
+    .info-card{
+      height: 410px;
     }
     
     .skills-secondary{
