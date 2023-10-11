@@ -497,6 +497,18 @@ li{
   }
 }
 
+@media (min-width:850px) and (max-height: 575px)
+{
+  .nav{
+    top: 5%;
+  }
+
+  .svgicon, .svgicon2{
+    height: 50px;
+    width: 50px;
+  }
+}
+
   @media (max-width:850px){
 
 .hero{
