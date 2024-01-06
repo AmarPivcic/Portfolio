@@ -59,18 +59,18 @@ a{
 }
 
 .image{
-    height: 450px;
+    height: 550px;
     position: absolute;
     left: 100px;
     top: 150px;
-    border-radius: 5%;
+    border-radius: 15px;
     z-index: 1;
 }
 .yellowbox{
   background-color: #F6C90E;
-  height: 450px;
+  height: 550px;
   width: 380px;
-  border-radius: 5%;
+  border-radius: 15px;
   position: absolute;
   left: -150px;
   top: 100px;
@@ -661,9 +661,9 @@ li{
   top: 280px;
 }
 .yellowbox{
-  height: 380px;
+  height: 350px;
   width: 380px;
-  left: -150px;
+  left: -180px;
   top: 200px;
 }
 
@@ -711,13 +711,13 @@ li{
 
     .image{
       height: 300px;
-      left: 7%;
+      left: 15%;
       top: 300px;
     }
     .yellowbox{
       height: 300px;
       width: 380px;
-      left: -150px;
+      left: -190px;
       top: 250px;
     }
     
@@ -727,12 +727,9 @@ li{
   {
     .image{
       height: 280px;
-      left: 7%;
     }
     .yellowbox{
       height: 280px;
-      width: 380px;
-      left: -150px;
     }
 
     .education-card{
